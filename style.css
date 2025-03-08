@@ -22,11 +22,21 @@ body {
     display: flex;
     justify-content: center;
 }
+.cat_container {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: auto;
+}
 .head_container{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size:50px;
+}
+.vid_container{
+    display: flex;
+    justify-content: center;
 }
 .buttons {
     width: 100%;
