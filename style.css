@@ -11,7 +11,13 @@ body {
 .container {
     text-align: center;
 }
-
+.pointer_container {
+    display: flex;
+    width: 100px;
+    height: 75px;
+    justify-content: center;
+    font-size: 50px;
+}
 .imgcontainer {
     display: flex;
     justify-content: center;
@@ -38,11 +44,23 @@ body {
 }
 .right{
     min-width: 40px;
-    min-height: 250px;
+    min-height: 25px;
     font-size: 7em;
     padding: 60px 60px;
     justify-content: right;
     background-color: #4caf50;
+    color: white;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.left{
+    min-width: 40px;
+    min-height: 25px;
+    font-size: 7em;
+    padding: 60px 60px;
+    justify-content: right;
+    background-color: #f44336;
     color: white;
     border: 5px solid #000000;
     border-radius: 5px;
@@ -58,18 +76,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-.left{
-    min-width: 40px;
-    min-height: 250px;
-    font-size: 7em;
-    padding: 60px 60px;
-    justify-content: right;
-    background-color: #f44336;
-    color: white;
-    border: 5px solid #000000;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .text {
     font-size: 2.5em;
     color: #d32f2f;
