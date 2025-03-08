@@ -7,96 +7,78 @@ body {
     background-color: #fdeaea;
     font-family: 'Arial', sans-serif;
     flex-direction: column;
-}
-
+    }
 .container {
     text-align: center;
 }
 
 .imgcontainer {
-    text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
-
-.head_container {
+.head_container{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 40px; /* Giữ kích thước to nhưng giảm nhẹ cho điện thoại */
+    font-size:50px;
 }
-
-.buttons, .return_buttons {
-    margin-top: 20px;
+.buttons {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center; /* Căn giữa nút trên mobile */
-    flex-wrap: wrap; /* Khi màn hình nhỏ, các nút sẽ xuống dòng */
 }
-
-/* Nút bấm giữ nguyên màu sắc nhưng tối ưu kích thước */
-.right, .left {
-    max-width: 300px; /* Không để quá rộng trên điện thoại */
-    min-width: 200px;
-    min-height: 150px;
-    font-size: 5em; /* Giữ font to nhưng giảm nhẹ cho mobile */
-    padding: 30px 40px;
+.return_buttons {
+    margin-top: 20px;
     justify-content: center;
-    background-color: #4caf50; /* Giữ màu */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.right{
+    min-width: 40px;
+    min-height: 250px;
+    font-size: 7em;
+    padding: 60px 60px;
+    justify-content: right;
+    background-color: #4caf50;
     color: white;
     border: 5px solid #000000;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px; /* Khoảng cách giữa các nút */
 }
-
-.left {
-    background-color: #f44336; /* Giữ màu đỏ */
-}
-
-.return {
-    font-size: 4em;
-    padding: 10px 15px;
-    background-color: #14cbef; /* Giữ màu xanh dương */
+.return{
+    justify-content: center;
+    font-size: 5em;
+    padding: 4px 3px;
+    background-color: #14cbef;
     color: white;
     border: 5px solid #000000;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.left{
+    min-width: 40px;
+    min-height: 250px;
+    font-size: 7em;
+    padding: 60px 60px;
+    justify-content: right;
+    background-color: #f44336;
+    color: white;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .text {
-    font-size: 2.2em; /* Giữ to nhưng giảm nhẹ cho mobile */
+    font-size: 2.5em;
     color: #d32f2f;
 }
-
-/* Hình ảnh giữ nguyên màu sắc nhưng co giãn tốt hơn trên điện thoại */
 .gif_container img {
-    width: 100%;
+    margin: center;
+    min-width: 50%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-/* Điều chỉnh cho điện thoại (màn hình nhỏ hơn 768px) */
-@media (max-width: 768px) {
-    .buttons, .return_buttons {
-        flex-direction: column; /* Xếp nút theo chiều dọc */
-        align-items: center;
-    }
-
-    .right, .left, .return {
-        font-size: 3.5em;
-        padding: 20px 30px;
-        width: 90%; /* Để nút rộng 90% màn hình */
-        min-height: 120px;
-    }
-
-    .head_container {
-        font-size: 30px; /* Nhỏ hơn để vừa điện thoại */
-    }
-
-    .text {
-        font-size: 1.8em; /* Nhỏ hơn để không chiếm nhiều chỗ */
-    }
 }
