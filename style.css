@@ -100,15 +100,15 @@ body {
         flex-direction: column;
     }
     .right{
-        width: 50px;
+        width: 20px;
         font-size: 50%;
-        padding: 30px 40px;
+        padding: 20px 20px;
         margin-right: 10px;
     }
     .left{
         width: 50px;
         font-size: 50%;
-        padding: 30px 40px;
+        padding: 20px 20px;
         margin-left: 10px;
     }
     .return {
